@@ -67,13 +67,7 @@ const Header = ({ avatar, name, siteDescription, socialMedia }) => (
       </Avatar>
       <Name>{name}</Name>
       <Desc>{siteDescription}</Desc>
-      <SocialMedia>
-        {socialMedia.map(social => (
-          <a key={social.name} href={social.url} rel="noopener noreferrer" target="_blank">
-            {social.name}
-          </a>
-        ))}
-      </SocialMedia>
+      
     </Content>
   </Wrapper>
 )
