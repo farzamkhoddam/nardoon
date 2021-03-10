@@ -22,7 +22,7 @@ module.exports = {
   backgroundColor: '#2b2e3c',
 
   // Your information
-  avatar: '/logos/lekoarts.png',
+  avatar: '/logos/lekoarts1.png',
   name: 'Wedding',
   location: 'Iran',
 

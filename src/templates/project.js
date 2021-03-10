@@ -24,6 +24,8 @@ const InnerWrapper = styled.div`
   max-width: ${props => `${props.theme.maxWidths.project}px`};
   margin: 0 auto;
   z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
 `
 
 const Project = ({ pageContext: { slug, prev, next }, data: { project: postNode, images: imgs } }) => {
@@ -45,7 +47,7 @@ const Project = ({ pageContext: { slug, prev, next }, data: { project: postNode,
                 }}
                 key={image.node.childImageSharp.fluid.src}
                 fluid={image.node.childImageSharp.fluid}
-                style={{ margin: '3rem 0', maxHeight: '80vh' }}
+                style={{ margin: '3rem 0', maxHeight: '80vh', width: '100%' }}
               />
             ))}
           </InnerWrapper>
